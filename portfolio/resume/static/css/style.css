@@ -1,0 +1,85 @@
+.navbar-nav .nav-link:hover{
+    font-weight: bold;
+    color:aqua;
+}
+
+body{
+    background-color: rgb(20,0,30);
+}
+
+.navbar-nav .nav-link{
+    font-size: 20px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.navbar-dark{
+    background-color: rgb(18,1,46);
+}
+
+.circular-image-container{
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image{
+    width: 110%;
+    height: auto;
+    display: block;
+}
+
+.name{
+    color: #fff;
+}
+.title{
+    color: aqua;
+}
+
+.about_image{
+    width: 200px;
+    height: auto;
+}
+
+.col-7 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+}
+
+
+.jumbtron{
+    background-color: #0244;
+    padding: 20px;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+.display4{
+    color:#eef3f8;
+    font-size: 24px;
+}
+
+.lead{
+    font-size: 18px;
+    color:#28a745;
+}
+.jumbtron jumbtron-fluid mt-2{
+    text-decoration: none;
+}
+
+.form-container{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius:  10px;
+    background-color:#1e183f;
+    color: white;
+}
