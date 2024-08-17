@@ -8,35 +8,37 @@ def home(request):
 def about(request):
     return render(request,"about.html")
 
-def project (request):
-    projects_show=[
+# views.py
+
+def project(request):
+    projects_show = [
         {
             'title': 'Sales Data Analysis : Power BI',
             'path': 'images/sales_data_analysis.PNG',
-        },
+            'github_url': 'https://github.com/hari200320/PowerBi-Project-Sales-Data-Analysis', 
+                },
         {
             'title': 'Amazon Prime Data Analysis : Power BI',
             'path': 'images/amazon_data_analysis.PNG',
+            'github_url': 'https://github.com/hari200320/PowerBi-Project-Amazon-Prime-Data-Analysis',  
         },
-
         {
             'title': 'PGLife',
             'path': 'images/PGLife.png',
+            'github_url': 'https://www.pglifes.com/', 
         },
-        
-         {
+        {
             'title': 'Portfolio',
             'path': 'images/portfolio.PNG',
+            'github_url': 'https://github.com/hari200320/Portfolio_Django',  
         },
-        
         {
             'title': 'GetMyAudit',
             'path': 'images/GetMyAudit.png',
+            'github_url': 'https://getmyaudit.com/',  
         },
-           
-
     ]
-    return render (request,"project.html",{"projects_show": projects_show})
+    return render(request, "project.html", {"projects_show": projects_show})
 
 
 def experience(request):

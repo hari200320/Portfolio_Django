@@ -4,12 +4,13 @@
 
 <div class="row my-2">
     {% for project in projects_show %}
-<div class="col-6">
-    <center><h4 class="text-light"> {{project.title}}   </h4></center>
-    <img src="{% static project.path %}" width="520" height="400" class="img-fluid"><br>
-
-</div>
-{% endfor %}
+    <div class="col-6">
+        <center><h4 class="text-light">{{ project.title }}</h4></center>
+        <a href="{{ project.github_url }}" target="_blank">
+            <img src="{% static project.path %}" width="520" height="400" class="img-fluid" alt="{{ project.title }}">
+        </a><br>
+    </div>
+    {% endfor %}
 </div>
 
 {% endblock content1 %}
