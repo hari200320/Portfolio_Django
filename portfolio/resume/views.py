@@ -12,31 +12,49 @@ def about(request):
 
 def project(request):
     projects_show = [
+
+        {
+            'title': 'CRUD operations APP : Django',
+            'path': 'images/crud.png',
+            'github_url': 'https://github.com/hari200320/CRUD-operations-in-DJANGO',  
+        },
+        {
+            'title': 'MultiModel Vision',
+            'path': 'images/mmv.png',
+            'github_url': 'https://multi-model-vision.streamlit.app/',  
+        },
+
         {
             'title': 'Sales Data Analysis : Power BI',
             'path': 'images/sales_data_analysis.PNG',
             'github_url': 'https://github.com/hari200320/PowerBi-Project-Sales-Data-Analysis', 
                 },
+
         {
             'title': 'Amazon Prime Data Analysis : Power BI',
             'path': 'images/amazon_data_analysis.PNG',
             'github_url': 'https://github.com/hari200320/PowerBi-Project-Amazon-Prime-Data-Analysis',  
         },
-        {
-            'title': 'PGLife',
-            'path': 'images/PGLife.png',
-            'github_url': 'https://www.pglifes.com/', 
-        },
-        {
-            'title': 'Portfolio',
-            'path': 'images/portfolio.PNG',
-            'github_url': 'https://github.com/hari200320/Portfolio_Django',  
-        },
+
         {
             'title': 'GetMyAudit',
             'path': 'images/GetMyAudit.png',
             'github_url': 'https://getmyaudit.com/',  
         },
+        
+        {
+            'title': 'PGLife',
+            'path': 'images/PGLife.png',
+            'github_url': 'https://www.pglifes.com/', 
+        },
+        
+        
+        {
+            'title': 'Portfolio',
+            'path': 'images/portfolio.PNG',
+            'github_url': 'https://github.com/hari200320/Portfolio_Django',  
+        },
+        
     ]
     return render(request, "project.html", {"projects_show": projects_show})
 
