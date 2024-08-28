@@ -32,7 +32,7 @@ body{
 
 .circular-image{
     width: 110%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -82,4 +82,13 @@ body{
     border-radius:  10px;
     background-color:#1e183f;
     color: white;
+}
+
+
+/* style.css */
+
+.projects-title {
+    color: white;
+    font-size: 2.5rem; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Add some spacing if necessary */
 }

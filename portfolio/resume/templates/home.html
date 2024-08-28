@@ -2,19 +2,86 @@
 {% load static %}
 {% block content1 %}
 <div class="row my-5">
-    <div class="col-12 d-flex justify-content-center align-items-cemter">
+    <div class="col-12 d-flex justify-content-center align-items-center">
         <div class="circular-image-container">
             <img class="circular-image" src="{% static 'images/im.jpg' %}" alt="Image">
         </div>
     </div>
 
     <div class="col-12 text-center mt-3">
-        <h4 class="title">Hi There!👋🏻 I am</h4>
+        <h4 class="title">
+            Hi There! <span class="wave">👋🏻</span> I am
+        </h4>
+        <h1 class="name">Hariharan R</h1>
         <div class="name">
-            <h2>Hariharan Radhakrishnan</h2>
-            <h3>I am a Constant Learner</h3>
+            <h2 id="typewriter"></h2>
         </div>
     </div>
+
+    <div class="col-12 text-center mt-3">
+        <!-- Your social media links here -->
+    </div>
+</div>
+
+<style>
+    .wave {
+        display: inline-block;
+        animation: wave-animation 2s infinite;
+        transform-origin: 70% 70%;
+    }
+
+    @keyframes wave-animation {
+        0% { transform: rotate(0deg); }
+        10% { transform: rotate(14deg); }
+        20% { transform: rotate(-8deg); }
+        30% { transform: rotate(14deg); }
+        40% { transform: rotate(-4deg); }
+        50% { transform: rotate(10deg); }
+        60% { transform: rotate(0deg); }
+        100% { transform: rotate(0deg); }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var typewriter = new Typewriter('#typewriter', {
+            loop: true,
+            deleteSpeed: 50,
+        });
+
+        typewriter
+            .typeString('Engineering Student')
+            .pauseFor(100)
+            .deleteAll()
+            .typeString('Web Developer')
+            .pauseFor(100)
+            .deleteAll()
+            .typeString('Data Analyst')
+            .pauseFor(100)
+            .deleteAll()
+            .typeString('Red Hat Certified System Administrator')
+            .pauseFor(100)
+            .deleteAll()
+            .start();
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        const texts = ["Constant learner", "Developer", "Tech Enthusiast"];
+        let count = 0;
+        const textElement = document.getElementById('changing-text');
+
+        function changeText() {
+            textElement.textContent = texts[count];
+            count = (count + 1) % texts.length;
+            setTimeout(changeText, 2000);
+        }
+
+        changeText();
+    });
+</script>
 
 
     <div class="col-12 text-center mt-3">
